@@ -11,7 +11,13 @@ Very simple:
 parser = Parsers::HackerNews::NewLinks.new
 parser.parse_links(nil, 5) # it mean: we parse only 5 pages without needed id
 parser.data #=> Array[..]
+
+###############################################################
+parser = Parsers::HackerNews::Jobs.new
+parser.parse_links(nil, 5) #parse 5 pages
+parser.data #=> Array[...]
 ```
+
 
 ## Contributing
 
